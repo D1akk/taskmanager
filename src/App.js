@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <h5>Менеджер задач</h5>
-
       <BrowserRouter>
         <nav>
           <ul>
@@ -25,7 +24,6 @@ function App() {
           <Route index element={<ListTask />} />
           <Route path="task/create" element={<CreateTask />} />
           <Route path="task/:id/edit" element={<EditTask />} />
-          
         </Routes>
       </BrowserRouter>
     </div>
